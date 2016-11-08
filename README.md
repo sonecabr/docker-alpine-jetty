@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Docker image to run jetty on alpine
 
 
@@ -37,3 +38,7 @@ Latest Oracle Java 8 JDK (plus DCEVM variant)
 Example:
 
     docker run -it --rm sonecabr/alpine-jetty java -version
+=======
+# docker-alpine-jetty
+Docker image to run jetty on alpine
+>>>>>>> e092c11e9361197b17128182b0123c146e37b2d8
