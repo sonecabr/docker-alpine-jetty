@@ -35,4 +35,4 @@ Latest Oracle Java 8 JDK (plus DCEVM variant)
 
 Example:
 
-    docker run -it --rm sonecabr/alpine-jetty java -version
+    docker run -p 8080:8080 -it --rm sonecabr/alpine-jetty
