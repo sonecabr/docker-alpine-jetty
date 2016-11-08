@@ -13,10 +13,10 @@ ENV JAVA_HOME="/opt/java" \
     LANG=C.UTF-8
 
 #Download all the things
-COPY resources/glibc-bin-2.23-r3.apk /tmp/
-COPY resources/glibc-i18n-2.23-r3.apk /tmp/
-COPY resources/glibc-2.23-r3.apk /tmp/
-COPY resources/jetty-distribution-9.3.13.v20161014.tar.gz /tmp/
+#COPY resources/glibc-bin-2.23-r3.apk /tmp/
+#COPY resources/glibc-i18n-2.23-r3.apk /tmp/
+#COPY resources/glibc-2.23-r3.apk /tmp/
+COPY resources/jetty-distribution-9.3.14.v20161028.tar.gz /tmp/
 COPY resources/jetty_upstart.sh /etc/init.d/jetty
 COPY resources/jdk-8u111-linux-x64.tar.gz /tmp/
 
@@ -104,8 +104,8 @@ RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates && \
 
 # Download JETTY 9
 RUN mkdir -p $JETTY_HOME && \
-    tar -xvzf /tmp/jetty-distribution-9.3.13.v20161014.tar.gz -C /tmp/ && \
-    mv /tmp/jetty-distribution-9.3.13.v20161014/* $JETTY_HOME/ && \
+    tar -xvzf /tmp/jetty-distribution-9.3.14.v20161028.tar.gz -C /tmp/ && \
+    mv /tmp/jetty-distribution-9.3.14.v20161028/* $JETTY_HOME/ && \
     chmod 755 /etc/init.d/jetty && \
     chmod 755 -R /opt/*
 
