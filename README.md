@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 ## Docker image to run jetty on alpine
-
 
 [![Build Status](https://travis-ci.org/sonecabr/docker-alpine-jetty.svg?branch=master)](https://travis-ci.org/sonecabr/docker-alpine-jetty)
 
@@ -20,7 +18,7 @@ Old tags will remain for compatibility sake, but are no longer documented.
 #### JCE Policy
 Special `_unlimited` images are available with Unlimited JCE Policy
 
-**Latest JRE8/JDK8 Version**: `8u111` 
+**Latest JRE8/JDK8 Version**: `8u111`
 
 ### Tags
 
@@ -38,7 +36,3 @@ Latest Oracle Java 8 JDK (plus DCEVM variant)
 Example:
 
     docker run -it --rm sonecabr/alpine-jetty java -version
-=======
-# docker-alpine-jetty
-Docker image to run jetty on alpine
->>>>>>> e092c11e9361197b17128182b0123c146e37b2d8
